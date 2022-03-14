@@ -44,17 +44,22 @@ body {
 @media(max-width: 600px) {
     body {
         background-image: url(/images/background-home-mobile.jpg);
+      
     }
 
     .flex-navbar {
         flex-direction: column;
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         padding-inline: 2em;
-        padding-block: 7em;
-        height: 100vh;
+        padding-block: 14em;
+        transform: translateX(100%);
         z-index: 1000;
+    }
+
+    .flex-navbar[data-visible="true"] {
+        transform: translateX(0);
     }
 
     .button-close-or-open {
@@ -65,6 +70,11 @@ body {
         background-repeat: no-repeat;
         border: none;
         margin:1em;
+    }
+
+    .button-close-or-open[aria-expanded="true"] {
+        background: url(/images/icon-close.svg);
+        background-repeat: no-repeat;
     }
 
     .logo {

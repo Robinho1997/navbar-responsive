@@ -52,7 +52,22 @@ body {
         top: 0;
         right: 0;
         padding-inline: 2em;
-        padding-block: 5em;
+        padding-block: 7em;
         height: 100vh;
+        z-index: 1000;
+    }
+
+    .button-close-or-open {
+        width: 2em;
+        aspect-ratio: 1;
+        z-index: 9999;
+        background: url(/images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        border: none;
+        margin:1em;
+    }
+
+    .logo {
+        margin: 1em;
     }
 }

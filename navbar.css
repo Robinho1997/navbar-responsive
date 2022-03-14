@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    background-image: url(/images/background-home-desktop.jpg);
+    background-image: url(images/background-home-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: barlow;
@@ -51,7 +51,7 @@ body {
 
 @media(max-width: 670px) {
     body {
-        background-image: url(/images/background-home-mobile.jpg);
+        background-image: url(images/background-home-mobile.jpg);
       
     }
 
@@ -78,14 +78,14 @@ body {
         width: 2em;
         aspect-ratio: 1;
         z-index: 9999;
-        background: url(/images/icon-hamburger.svg);
+        background: url(images/icon-hamburger.svg);
         background-repeat: no-repeat;
         border: none;
         margin:1em;
     }
 
     .button-close-or-open[aria-expanded="true"] {
-        background: url(/images/icon-close.svg);
+        background: url(images/icon-close.svg);
         background-repeat: no-repeat;
     }
 
@@ -101,7 +101,7 @@ body {
 @media(min-width: 670px) and (max-width: 939px) {
 
     body {
-        background: url(/images/background-home-tablet.jpg);
+        background: url(images/background-home-tablet.jpg);
         background-repeat: no-repeat;
         background-size: cover;
     }

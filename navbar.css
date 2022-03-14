@@ -6,9 +6,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: barlow;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     height: 100vh;
 }
+
 
 .logo {
     margin: 3em;
@@ -21,6 +22,7 @@ body {
     align-items: center;
 }
 
+
 .flex-navbar {
     display: flex;  
     gap: 1.5em;
@@ -28,10 +30,9 @@ body {
     color: white;
     background-color: hsl(0 0% 100% / 0.1);
     backdrop-filter: blur(2em);
-   
-    margin: 0;
- 
-    
+    padding-block: 2em;
+    padding-right: 10%;
+    margin: 0;   
 }
 
 
@@ -40,9 +41,12 @@ body {
     margin-right: 1em;
 }
 
+
 .button-close-or-open {
     display: none;
 }
+
+
 
 
 @media(max-width: 670px) {
@@ -50,6 +54,7 @@ body {
         background-image: url(/images/background-home-mobile.jpg);
       
     }
+
 
     .flex-navbar {
         flex-direction: column;
@@ -60,11 +65,13 @@ body {
         padding-block: 14em;
         transform: translateX(100%);
         z-index: 1000;
+        height: 100vh;
     }
 
     .flex-navbar[data-visible="true"] {
         transform: translateX(0);
     }
+
 
     .button-close-or-open {
         display: block;
@@ -82,13 +89,16 @@ body {
         background-repeat: no-repeat;
     }
 
+
     .logo {
         margin: 1em;
     }
 }
 
 
-@media(min-width: 670px) and (max-width: 850px) {
+
+
+@media(min-width: 670px) and (max-width: 939px) {
 
     body {
         background: url(/images/background-home-tablet.jpg);
@@ -98,5 +108,9 @@ body {
 
     .number-navbar {
         display: none;
+    }
+
+    .flex-navbar {
+        padding-right: 1em;
     }
 }
